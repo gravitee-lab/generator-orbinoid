@@ -1,0 +1,46 @@
+{
+  "name": "@gravitee-lab/generator-orbinoid",
+  "version": "0.0.0",
+  "description": "This is [the Orbinoïd](https://github.com/gravitee-lab/orbinoid) yeoman generator.",
+  "author": {
+    "name": "Jean-Baptiste-Lasselle",
+    "email": "jean.baptiste.lasselle.pegasus@gmail.com"
+  },
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "scripts": {
+    "build": "tsc -p .",
+    "rebuild": "npm run clean && npm run build",
+    "watch": "tsc -p . --watch",
+    "clean": "rimraf ./lib",
+    "lint": "tslint -p ./ -t verbose && markdownlint ./templates/**/*.md ./templates/**/*.md.ejs || exit 0",
+    "test": "mocha",
+    "prepare": "npm run rebuild"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "dedent": "^0.7.0",
+    "extended-yo-generator": "^1.0.13",
+    "yosay": "^2.0.2"
+  },
+  "devDependencies": {
+    "@manuth/tsconfig": "^1.2.2",
+    "@manuth/tslint-presets": "^1.0.4",
+    "@types/dedent": "^0.7.0",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.7.2",
+    "@types/yosay": "0.0.29",
+    "chalk": "^2.4.2",
+    "dedent": "^0.7.0",
+    "extended-yo-generator": "^1.0.13",
+    "markdownlint-cli": "^0.18.0",
+    "mocha": "^6.2.0",
+    "rimraf": "^3.0.0",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3",
+    "typescript-tslint-plugin": "^0.5.4",
+    "yo": "^3.1.0",
+    "yosay": "^2.0.2"
+  }
+}

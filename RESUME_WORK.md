@@ -64,8 +64,8 @@ ssh -Ti ~/.ssh.perso.backed/id_rsa git@github.com
 export LOCAL_WORKSPACE=~/generator-orbinoid
 cd ${LOCAL_WORKSPACE}
 atom .
-export FEATURE_ALIAS="somefeatureimworkingon"
-export COMMIT_MESSAGE="feat.(${FEATURE_ALIAS}): what you'll be working on in a few words here "
+export FEATURE_ALIAS="yeoman-generator-generator"
+export COMMIT_MESSAGE="feat.(${FEATURE_ALIAS}): setting up yeoman generator project "
 # git flow init --defaults
 # git flow feature start "${FEATURE_ALIAS}"
 # git add --all && git commit -m "${COMMIT_MESSAGE}" && git push -u origin HEAD
