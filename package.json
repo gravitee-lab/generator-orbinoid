@@ -1,6 +1,6 @@
 {
   "name": "@gravitee-lab/generator-orbinoid",
-  "version": "0.0.0",
+  "version": "0.0.1-beta",
   "description": "This is [the Orbinoïd](https://github.com/gravitee-lab/orbinoid) yeoman generator.",
   "author": {
     "name": "Jean-Baptiste-Lasselle",
